@@ -1,0 +1,10 @@
+# ninja log v5
+12	1257	6894636662875600	CMakeFiles/cpp.dir/SLL.cpp.obj	edce4a50f02db993
+6	1037	6894632490776970	CMakeFiles/cpp.dir/main.cpp.obj	c09b10c32d3ba031
+2	1536	6895390266639269	build.ninja	7d1ff7e7025d5dd
+1038	1273	6894632493097103	cpp.exe	c1b60aba2e2a65e7
+18	5765	6895393254710177	CMakeFiles/cpp.dir/SLL.cpp.obj	edce4a50f02db993
+21	4955	6895393644692483	CMakeFiles/cpp.dir/SLL.cpp.obj	edce4a50f02db993
+12	3970	6895394451008601	CMakeFiles/cpp.dir/SLL.cpp.obj	edce4a50f02db993
+14	2015	6895394954547402	CMakeFiles/cpp.dir/SLL.cpp.obj	edce4a50f02db993
+18	2982	6895426770952340	CMakeFiles/cpp.dir/SLL.cpp.obj	edce4a50f02db993

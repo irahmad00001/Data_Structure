@@ -1,0 +1,3 @@
+F:/new win/desktop/Daneshgah/Data Structure/Code/Singly Linked list/cpp/cmake-build-debug/CMakeFiles/cpp.dir
+F:/new win/desktop/Daneshgah/Data Structure/Code/Singly Linked list/cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/new win/desktop/Daneshgah/Data Structure/Code/Singly Linked list/cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
