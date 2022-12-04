@@ -20,12 +20,7 @@ public class CircularLinkedList<T> {
 			return temp;
 		}else {
 			T temp = first.data;
-			Node<T> tmp = first;
-			while(tmp.next == first) {
-				tmp = tmp.next;
-			}
-			tmp.next = tmp.next.next;
-			first = tmp;
+			first = first.next;
 			return temp;
 		}
 	}
@@ -40,7 +35,7 @@ public class CircularLinkedList<T> {
 			return temp;
 		}else {
 			Node<T> tmp = first;
-			while(tmp.next.next == first) {
+			while(tmp.next.next != first) {
 				tmp = tmp.next;
 			}
 			T temp = tmp.next.data;
@@ -108,10 +103,14 @@ public class CircularLinkedList<T> {
 		
 		public void addAtRight(T input) {
 			if(first == null) {
-				first.data = input;
+				Node<T> node = new Node<T>();
+				node.data = input;
+				first = node;
 			}else if(first.next == null) {
-				first.next.data = input;
-				first.next.next = first;
+				Node<T> node = new Node<T>();
+				node.data = input;
+				first.next = node;
+				node.next = first;
 			}else {
 				Node<T> node = new Node<T>();
 				node.data = input;
@@ -133,12 +132,13 @@ public class CircularLinkedList<T> {
 			}else {
 				Node<T> node = new Node<T>();
 				node.data = input;
+				Node<T> temp = first;
 				node.next = first;
-				Node<T> temp = new Node<T>();
-				while(temp.next == first) {
+				while(temp.next != first) {
 					temp = temp.next;
 				}
 				temp.next = node;
+
 			}
 		}
 		
@@ -161,9 +161,9 @@ public class CircularLinkedList<T> {
 		
 		public int size() {
 			if(first == null)return 0;
-			Node<T> temp = first;
+			Node<T> temp = first.next;
 			int ans = 1;
-			while(temp != first.next) {
+			while(temp != first) {
 				temp = temp.next;
 				ans += 1;
 			}
@@ -178,7 +178,14 @@ public class CircularLinkedList<T> {
 				System.out.println(node.data);
 				node = node.next;
 			}while(node != first);
-			
 		}
+		
+		public void printFirst() {
+			System.out.println(first.data);
+		}
+		
+		
+		
+		
 		
 	}
